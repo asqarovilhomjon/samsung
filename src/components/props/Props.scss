@@ -1,0 +1,120 @@
+.mobile {
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgb(204, 224, 240);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 30px;
+
+    .mobile_text,
+    .mobile_brend {
+        font-size: 50px;
+        font-weight: 700;
+        color: black;
+    }
+
+    .mobile_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+
+        .mobile_item {
+            font-size: 18px;
+            color: black;
+            font-weight: 600;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: .5;
+
+            &:hover {
+                background: #000;
+                color: white;
+            }
+        }
+    }
+
+    .mobile_img {
+        max-width: 800px;
+        height: 600px;
+        border-radius: 20px;
+    }
+
+    .mobile_description {
+        font-size: 22px;
+        text-align: center;
+        color: black;
+        font-weight: 500;
+        word-spacing: 1px;
+        line-height: normal;
+    }
+
+    .btn_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .mobile_btn1 {
+            width: 120px;
+            height: 40px;
+            color: black;
+            background: none;
+            border: transparent;
+            border-bottom: 3px solid black;
+            font-size: 18px;
+            transition: .5s;
+            padding: 0px 10px;
+
+            &:hover {
+                // border: transparent;
+                border-radius: 20px;
+            }
+        }
+
+        .mobile_btn2 {
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: black;
+            border: 1px solid transparent;
+            color: white;
+            font-size: 18px;
+
+            &:hover {
+                opacity: .6;
+            }
+        }
+    }
+
+    &.white-text {
+        color: white;
+
+        .mobile_text,
+        .mobile_brend,
+        .mobile_item,
+        .mobile_description {
+            color: white;
+        }
+
+        .mobile_btn1 {
+            color: white;
+            border-bottom: 3px solid white;
+        }
+
+        .mobile_btn2 {
+            color: white;
+            border: 1px solid white;
+        }
+    }
+
+}

@@ -1,52 +1,57 @@
-.header{
-    width: 100%;
-
-}
-.navbar{
+.header {
+    max-width: 1500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 30px;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    &__logo{
-        width: 200px;
-        height: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        width: 100%;
+        height: 50px;
     }
-    &__collection{
-        display: flex;
-        flex-direction: row;
-        gap: 8px;
-        align-items: center;
-        font-size: 14px;
-        font-weight: 550;
-    }
-    &__categories{
-        display: flex;
-        gap: 8px;
-        font-size: 14px;
-        font-weight: 550;
-        align-items: center;
-       
-    }
-    &__icons{
-        font-size: 30px;
-        font-weight: 300;
+
+    .navbar {
         display: flex;
         align-items: center;
-        gap: 20px;
-    }
-    &__link{
-        &:hover{
-            padding: 4px;
-            background: #000;
-            color: white;
-            border-radius: 20px;
+        justify-content: center;
+        gap: 80px;
+
+        .navbar_item,
+        .navbar_item_two {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            list-style: none;
+
+            .nav_list {
+                padding: 5px 10px;
+                border-radius: 20px;
+                font-size: 14px;
+                font-weight: 700;
+                transition: .5s;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    transition: .5s;
+                }
+            }
         }
     }
-}
-.category{
-    &:hover{
-        padding: 4px;
-        background: #000;
-        color: white;
-        border-radius: 20px;
+
+    .header_icons_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .header_icons {
+            font-size: 24px;
+            color: black;
+            cursor: pointer;
+        }
     }
 }
